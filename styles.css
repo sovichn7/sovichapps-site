@@ -1,0 +1,120 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 18px;
+  line-height: 1.55;
+  color: #1a1a1a;
+  background: #f7f4ef;
+}
+
+a {
+  color: #1a4a6e;
+}
+
+.top {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+  max-width: 42rem;
+  margin: 0 auto;
+  padding: 1.25rem 1.25rem 0;
+}
+
+.brand {
+  font-family: system-ui, -apple-system, sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  color: #1a1a1a;
+}
+
+nav {
+  display: flex;
+  gap: 1rem;
+  font-family: system-ui, -apple-system, sans-serif;
+  font-size: 0.9rem;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.doc,
+.home {
+  max-width: 42rem;
+  margin: 0 auto;
+  padding: 2rem 1.25rem 3rem;
+}
+
+h1 {
+  font-size: 2rem;
+  line-height: 1.2;
+  margin: 0 0 1.25rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 1.15rem;
+  margin: 2rem 0 0.75rem;
+  font-family: system-ui, -apple-system, sans-serif;
+  font-weight: 650;
+}
+
+p {
+  margin: 0 0 1rem;
+}
+
+.eyebrow {
+  font-family: system-ui, -apple-system, sans-serif;
+  font-size: 0.8rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #5c5c5c;
+  margin-bottom: 0.5rem;
+}
+
+.lede {
+  font-size: 1.05rem;
+  color: #333;
+}
+
+.links {
+  list-style: none;
+  padding: 0;
+  margin: 2rem 0 0;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+.links li {
+  margin: 0 0 0.75rem;
+}
+
+.links a {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.foot {
+  max-width: 42rem;
+  margin: 0 auto;
+  padding: 0 1.25rem 2.5rem;
+  font-family: system-ui, -apple-system, sans-serif;
+  font-size: 0.85rem;
+  color: #5c5c5c;
+}
+
+.foot p {
+  margin: 0 0 0.35rem;
+}

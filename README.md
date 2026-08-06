@@ -2,12 +2,16 @@
 
 Static Privacy Policy + Terms for App Store Connect.
 
-Source of truth lives in the private `dating_app` repo (`PRIVACY.md` / `TERMS.md` / `apps/mobile/lib/legal-copy.ts`).
-Regenerate from that repo: `node scripts/generate-legal-site.mjs`, then copy `site/` here and push.
+**Live:** https://sovichapps.com/privacy/ · https://sovichapps.com/terms/
 
-## Custom domain
+Source of truth is the private `dating_app` repo (`PRIVACY.md` / `TERMS.md` / `apps/mobile/lib/legal-copy.ts`).  
+Ops write-up: `dating_app` → [SETUP.md §4b](https://github.com/sovichn7/dating_app/blob/main/SETUP.md) (path may differ by branch).
 
-GitHub Pages serves this repo. In Cloudflare DNS for `sovichapps.com` (DNS only / grey cloud):
+Regenerate from `dating_app`: `pnpm legal-site`, then copy `site/` into this repo and push.
+
+## Custom domain (Cloudflare → GitHub Pages)
+
+DNS only / grey cloud on Cloudflare for `sovichapps.com`:
 
 | Type | Name | Content |
 |------|------|---------|
@@ -17,4 +21,4 @@ GitHub Pages serves this repo. In Cloudflare DNS for `sovichapps.com` (DNS only 
 | A | `@` | `185.199.111.153` |
 | CNAME | `www` | `sovichn7.github.io` |
 
-Then in the repo **Settings → Pages → Custom domain**, confirm `sovichapps.com` and enable HTTPS.
+Repo **Settings → Pages** → custom domain `sovichapps.com` + Enforce HTTPS.

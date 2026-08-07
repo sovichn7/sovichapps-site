@@ -17,4 +17,11 @@ GitHub Pages serves this repo. In Cloudflare DNS for `sovichapps.com` (DNS only 
 | A | `@` | `185.199.111.153` |
 | CNAME | `www` | `sovichn7.github.io` |
 
+`www` should 301 to `https://sovichapps.com/` (GitHub Pages does this when both hostnames are configured).
+
 Then in the repo **Settings → Pages → Custom domain**, confirm `sovichapps.com` and enable HTTPS.
+
+## Inbound mail
+
+Public contact addresses are `support@sovichapps.com` and `privacy@sovichapps.com`.
+Forward them with Cloudflare Email Routing (or equivalent) to your real inbox — listing the addresses without a forward will bounce mail.
